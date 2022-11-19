@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32825.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "auth_mic_service", "auth_mic_service\auth_mic_service.csproj", "{EC4EBC87-5D81-47B4-9A50-18B79564983D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gateway", "gateway\gateway.csproj", "{4E4FE70A-FABB-48FC-BBDC-77C784CACE96}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "entry_mic_service", "entry_mic_service\entry_mic_service.csproj", "{D84D99B6-D6FE-4FBE-B22E-EB1620FC6690}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ws_mic_service", "ws_mic_service\ws_mic_service.csproj", "{E5E434F2-CB83-4191-96BC-4DE347C7ECA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "work1_mic_service", "work1_mic_service\work1_mic_service.csproj", "{36BAA7D1-0ABC-47F1-B8A5-AFA642D0734D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "work2_mic_service", "work2_mic_service\work2_mic_service.csproj", "{D643857F-4824-4C5B-9B8D-BB689834361D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC4EBC87-5D81-47B4-9A50-18B79564983D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC4EBC87-5D81-47B4-9A50-18B79564983D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC4EBC87-5D81-47B4-9A50-18B79564983D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC4EBC87-5D81-47B4-9A50-18B79564983D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E4FE70A-FABB-48FC-BBDC-77C784CACE96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E4FE70A-FABB-48FC-BBDC-77C784CACE96}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E4FE70A-FABB-48FC-BBDC-77C784CACE96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E4FE70A-FABB-48FC-BBDC-77C784CACE96}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D84D99B6-D6FE-4FBE-B22E-EB1620FC6690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D84D99B6-D6FE-4FBE-B22E-EB1620FC6690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D84D99B6-D6FE-4FBE-B22E-EB1620FC6690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D84D99B6-D6FE-4FBE-B22E-EB1620FC6690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5E434F2-CB83-4191-96BC-4DE347C7ECA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5E434F2-CB83-4191-96BC-4DE347C7ECA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5E434F2-CB83-4191-96BC-4DE347C7ECA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5E434F2-CB83-4191-96BC-4DE347C7ECA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36BAA7D1-0ABC-47F1-B8A5-AFA642D0734D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36BAA7D1-0ABC-47F1-B8A5-AFA642D0734D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36BAA7D1-0ABC-47F1-B8A5-AFA642D0734D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36BAA7D1-0ABC-47F1-B8A5-AFA642D0734D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D643857F-4824-4C5B-9B8D-BB689834361D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D643857F-4824-4C5B-9B8D-BB689834361D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D643857F-4824-4C5B-9B8D-BB689834361D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D643857F-4824-4C5B-9B8D-BB689834361D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13756B6A-578C-47FE-AE6C-09F9C950E2F5}
+	EndGlobalSection
+EndGlobal
