@@ -5,15 +5,20 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "auth_mic_service", "auth_mic_service\auth_mic_service.csproj", "{EC4EBC87-5D81-47B4-9A50-18B79564983D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "gateway", "gateway\gateway.csproj", "{4E4FE70A-FABB-48FC-BBDC-77C784CACE96}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "gateway", "gateway\gateway.csproj", "{4E4FE70A-FABB-48FC-BBDC-77C784CACE96}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "entry_mic_service", "entry_mic_service\entry_mic_service.csproj", "{D84D99B6-D6FE-4FBE-B22E-EB1620FC6690}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "entry_mic_service", "entry_mic_service\entry_mic_service.csproj", "{D84D99B6-D6FE-4FBE-B22E-EB1620FC6690}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ws_mic_service", "ws_mic_service\ws_mic_service.csproj", "{E5E434F2-CB83-4191-96BC-4DE347C7ECA9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ws_mic_service", "ws_mic_service\ws_mic_service.csproj", "{E5E434F2-CB83-4191-96BC-4DE347C7ECA9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "work1_mic_service", "work1_mic_service\work1_mic_service.csproj", "{36BAA7D1-0ABC-47F1-B8A5-AFA642D0734D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "work1_mic_service", "work1_mic_service\work1_mic_service.csproj", "{36BAA7D1-0ABC-47F1-B8A5-AFA642D0734D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "work2_mic_service", "work2_mic_service\work2_mic_service.csproj", "{D643857F-4824-4C5B-9B8D-BB689834361D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "work2_mic_service", "work2_mic_service\work2_mic_service.csproj", "{D643857F-4824-4C5B-9B8D-BB689834361D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "compose", "compose", "{41AAE601-600C-41E6-ADD7-57F86AABB86E}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

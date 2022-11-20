@@ -1,0 +1,32 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/movies",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": "7276"
+        }
+      ],
+      "UpstreamPathTemplate": "/movies",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT" ],
+      "AuthenticationOptions": {
+        "AuthenticationProviderKey": "IdentityApiKey",
+        "AllowedScopes": []
+      }
+    },
+    {
+      "DownstreamPathTemplate": "/api/auth",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "192.168.10.21",
+          "Port": "49154"
+        }
+      ],
+      "UpstreamPathTemplate": "/security/auth",
+      "UpstreamHttpMethod": ["POST" ]
+    }
+  ]
+}

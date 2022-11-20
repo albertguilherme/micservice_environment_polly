@@ -29,15 +29,20 @@ namespace auth_mic_service.Repository.Impl
             return query;
         }
 
-        public T? Get(object Id)
+        public T? Get(object id)
         {
-            return _context.Set<T>().Find(Id);
+            return _context.Set<T>().Find(id);
         }
 
         public IEnumerable<T> GetAll(Expression<Func<T, bool>> predicate)
         {
             IQueryable<T> query = _context.Set<T>();
             return query;
+        }
+
+        public int SaveChanges()
+        {
+            return _context.SaveChanges();
         }
 
         public void Update(T data)

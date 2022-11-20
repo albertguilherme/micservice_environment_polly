@@ -7,11 +7,12 @@ namespace auth_mic_service.Extensions
 {
     public static class RepositoryExtension
     {
-        public static IServiceCollection ConfigureRepository(this IServiceCollection service)
+        public static WebApplicationBuilder ConfigureRepository(this WebApplicationBuilder builder)
         {
-            service.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<IUserRepository, UserRepository>();
+            builder.Services.AddScoped<ITokenRepository, TokenRepository>();
 
-            return service;
+            return builder;
         }
     }
 }

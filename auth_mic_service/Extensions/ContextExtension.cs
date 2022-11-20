@@ -5,13 +5,13 @@ namespace auth_mic_service.Extensions
 {
     public static class ContextExtension
     {
-        public static IServiceCollection ConfigureDatabase(this IServiceCollection service)
+        public static WebApplicationBuilder ConfigureDatabase(this WebApplicationBuilder builder)
         {
-            service.AddDbContext<Context>(opt => {
+            builder.Services.AddDbContext<Context>(opt => {
                 opt.UseInMemoryDatabase("InMem");
             });
 
-            return service;
+            return builder;
         }
 
 
@@ -36,7 +36,8 @@ namespace auth_mic_service.Extensions
                     {
                         new Data.Model.Role()
                         {
-                            Description = "NobelLaureate"
+                            Description = "NobelLaureate",
+                            Acronyms = "NL"
                         }
                     },
                 });

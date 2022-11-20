@@ -3,10 +3,12 @@ using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.ConfigureDatabase();
-builder.Services.ConfigureRepository();
+builder.ConfigureDatabase();
+builder.ConfigureRepository();
+builder.ConfigureService();
+builder.ConfigureSettings();
 
-builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 var logger = new LoggerConfiguration()
                 .WriteTo.Console()
@@ -28,7 +30,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

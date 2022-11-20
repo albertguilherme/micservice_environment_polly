@@ -4,5 +4,7 @@
     {
         public virtual User User { get; set; }
         public string Value { get; set; }
+        public DateTime ValidFrom { get; set; }
+        public DateTime ValidTo { get; set; }
     }
 }

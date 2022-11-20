@@ -7,6 +7,7 @@
             Users = new HashSet<User>();
         }
             
+        public string Acronyms { get; set; }
         public string Description { get; set; }
         public virtual ICollection<User> Users { get; set; }
     }

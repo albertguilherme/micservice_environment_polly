@@ -15,6 +15,7 @@ namespace auth_mic_service.Data.Model
         public string Email { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
+        public DateTime? LastLogin { get; set; }
         public virtual ICollection<Role> Roles { get; set; }
     }
 }

@@ -3,6 +3,7 @@ using auth_mic_service.Data.Dto;
 using auth_mic_service.Data.Model;
 using auth_mic_service.Extensions;
 using auth_mic_service.Repository.Interface;
+using Microsoft.EntityFrameworkCore;
 
 namespace auth_mic_service.Repository.Impl
 {
@@ -17,7 +18,17 @@ namespace auth_mic_service.Repository.Impl
 
         public User? FindAndLogIn(LogInDtoIn logInDtoIn)
         {
-            return _context.Users.FirstOrDefault(x => x.Username == logInDtoIn.Username && x.Password == logInDtoIn.Password.ToMd5());
+            var user = _context.Users
+                .Include(x => x.Roles)
+                .FirstOrDefault(x => x.Username == logInDtoIn.Username && x.Password == logInDtoIn.Password.ToMd5());
+
+            if(user != null)
+            {
+                user.LastLogin = DateTime.UtcNow;
+                _context.SaveChanges();
+            }
+
+            return user;
         }
     }
 }
